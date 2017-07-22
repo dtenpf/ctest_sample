@@ -10,6 +10,7 @@
 # Build/Test/Create Package
 
 ~~~~
+git clone https://github.com/dtenpf/ctest_sample.git
 mkdir -p build
 cd build 
 cmake ..
