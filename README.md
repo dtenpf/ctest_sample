@@ -10,6 +10,7 @@
 # Build/Test/Create Package
 
 ~~~~
+mkdir -p build
 cd build 
 cmake ..
 make 
