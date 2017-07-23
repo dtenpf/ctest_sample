@@ -12,6 +12,7 @@ int scal_mul(int a, int b)
 }
 int scal_dev(int a, int b) 
 {
-	return a%b; /* BUG !! */
+	//return a%b; /* BUG !! */
+	return a/b; 
 }
 
