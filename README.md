@@ -16,5 +16,5 @@ cd build
 cmake ..
 make 
 make test
-cpack
+make package
 ~~~~
