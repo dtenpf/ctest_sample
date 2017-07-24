@@ -5,6 +5,9 @@ add_subdirectory(test)
 add_subdirectory(scal)
 add_subdirectory(smath)
 
+set(CMAKE_INSTALL_PREFIX "/opt/ftl/")
+set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/ftl")
+
 set(CPACK_DEB_COMPONENT_INSTALL ON)
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_NAME "libsmath")
