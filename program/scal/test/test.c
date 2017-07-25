@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "simple_calc.h"
-#include "simple_math.h"
 
 #define LOG_E(msg,...) fprintf(stderr,"%s:%d:[E] " msg "\n", __FILE__,__LINE__,##__VA_ARGS__)
 #define LOG_W(msg,...) fprintf(stderr,"%s:%d:[W] " msg "\n", __FILE__,__LINE__,##__VA_ARGS__)
@@ -68,14 +67,7 @@ int main(int argc, char *argv[])
 				LOG_E("Error:out=%d", out);
 			}
 			break;
-		case 5:/* FAIL_REGULAR_EXPRESSION sample */
-			LOG_V("TESTCASE %02d : smath_pow()", testcase);
-			out = smath_pow(10, 3);
-			if(out != 1000) {
-				LOG_E("Error:out=%d", out);
-			}
-			break;
-		default:
+	default:
 			return -1;
 	}
 

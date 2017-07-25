@@ -11,10 +11,19 @@
 
 ~~~~
 git clone https://github.com/dtenpf/ctest_sample.git
-mkdir -p build
-cd build 
-cmake ..
+mkdir -p build/scal
+mkdir -p build/smath
+cd build/scal 
+cmake -DCMAKE_INSTALL_PREFIX=../ ../../program/scal
 make 
 make test
+make install
+make package
+
+cd ../smath
+cmake -DCMAKE_INSTALL_PREFIX=../ ../../program/smath
+make
+make test
+make install
 make package
 ~~~~
