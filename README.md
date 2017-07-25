@@ -10,7 +10,7 @@
 # Build/Test/Create Package
 
 ~~~~
-git clone https://github.com/dtenpf/ctest_sample.git
+git clone -b test_multi_package https://github.com/dtenpf/ctest_sample.git
 mkdir -p build/scal
 mkdir -p build/smath
 cd build/scal 
